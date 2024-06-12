@@ -82,6 +82,11 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             display: none;
         }
+
+        .collapsible.active + .content {
+            display: block; /* Show content when active */
+        }
+
         p, ul {
             margin: 15px 0;
             line-height: 1.6;
@@ -172,7 +177,7 @@
             </ul>
         </div>
 
-        <button class="collapsible">Отношения с другими людьми</button>
+        <button class="collapsible" onclick="toggleCollapsible(event)">Отношения с другими людьми</button>
         <div class="content">
             <ul>
                 <li>Стеснительность, не возможность отстоять себя и высказать мнение</li>
