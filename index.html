@@ -4,154 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Виктория Схема Терапевт</title>
-<!--     <link rel="icon" href="/assets/2912999.ico" type="image/x-icon"> -->
+    <!-- <link rel="icon" href="/assets/2912999.ico" type="image/x-icon"> -->
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        price {
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        body {
-            
-            font-family: 'Roboto', sans-serif;
-            background: #f4f4f9;  
-/*             background: #333333;   */
-            color: #333;
-/*             color: #ffffff; */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: auto;
-        }
-        .container {
-/*             background: #fff; */
-            background: linear-gradient(to bottom, #f5f5dc, #d2b48c);
-/*             background: #333333; */
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
-            width: 90%;
-            padding: 30px;
-            margin: 20px auto;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-/*             color: #4CAF50; */
-            color: #6EBB63;
-        }
-        .collapsible {
-            font-weight: bold;
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: center;
-            outline: none;
-            font-size: 1.2em;
-            margin-top: 10px;
-            border-radius: 5px;
-            .button-text {
-                display: none;
-            }
-
-        }
-        .content {
-            padding: 0 18px;
-            overflow: hidden;
-            background-color: #f9f9f9;
-            margin-top: 10px;
-            border-radius: 5px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            display: block;
-        }
-
-        p, ul {
-            margin: 15px 0;
-            line-height: 1.6;
-            font-size: 0.9em;
-            text-align: left;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: left;
-        }
-        ul li {
-            padding-left: 20px;
-            text-indent: -20px;
-        }
-        ul li::before {
-            font-size: 1.2em;
-            content: "•";
-            color: #4CAF50;
-            padding-right: 10px;
-        }
-        .whatsapp-link, .telegram-link {
-            display: inline-block;
-            margin-top: 20px;
-            text-align: center;
-            padding: 10px 20px;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            margin-right: 10px;
-        }
-        .whatsapp-link:hover {
-            background-color: #1DA851;
-        }
-        .telegram-link {
-            background-color: #0088cc;
-        }
-        .telegram-link:hover {
-            background-color: #007ab8;
-        }
-        .whatsapp-icon {
-            margin-right: 5px;
-            vertical-align: middle;
-        }
-        .profile-img {
-            width: 190px;
-            height: 190px;
-            border-radius: 80%;
-            margin: 20px auto;
-        }
-        .profile-description {
-            margin: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!--     <header>
+    <!-- <header>
         <div class="line1">Профиль Схема Терапевта</div>
         <div class="line2">Виктория Сороковская</div>
-    </header>
- -->
+    </header> -->
+
     <div class="container">
         <img src="https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/image.jpeg?raw=true" alt="Profile Image" class="profile-img">
         <h1>Виктория Сороковская</h1>
@@ -200,29 +63,20 @@
         </div>
 
         <br><br>
-        <body>
+
+        <div class="contact-section">
             <p style="color: white; font-size: 22px; text-align: center;"><strong><u>Стоимость консультации - 2500₽ / 30$ за 55 минут встречи</u></strong></p>
             <br>
             <p style="color: white;">Работаю онлайн, со взрослыми. Не работаю с детьми и семейным парами.</p>
             <p style="color: white;">Если вы не нашли в списке ваш запрос — это нормально. Возможно, ваша ситуация слишком запутана, чтобы определить запрос самостоятельно. Моя работа предполагает помощь в формировании запроса и разбора спутанной ситуации.</p>
-        </body>
-        
-<!--         <button class="collapsible">Стоимость консультации ($)</button>
-        <div class="content">
-            <p>2500 рублей за 55 минут встречи.</p>
-            <p>Работаю онлайн, со взрослыми. Не работаю с детьми и семейным парами.</p>
-            <p>Если вы не нашли в списке ваш запрос — это нормально. Возможно, ваша ситуация слишком запутана, чтобы определить запрос самостоятельно. Моя работа предполагает помощь в формировании запроса и разбора спутанной ситуации.</p>
-        </div>
- -->
-        <body>
+
             <a href="https://wa.me/972586211989" class="contact-link whatsapp-link">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" target="_blank" width="20">WhatsApp
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" target="_blank" width="30">
             </a>
             <a href="https://t.me/Victoria_Sorokivskaia" class="contact-link telegram-link">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt=" Telegram" class="whatsapp-icon" target="_blank" width="20">Telegram
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="whatsapp-icon" target="_blank" width="30">
             </a>
-        </body>
-        
+        </div>
     </div>
     <footer>
         &copy; 2024 Виктория Сороковская
