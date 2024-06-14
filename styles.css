@@ -62,7 +62,7 @@ h1 {
 
 .collapsible2 {
   font-weight: bold;
-  background-color: transparent; /* Make it transparent */
+  background-color: rgba(76, 175, 80, 0.69); /* Make it transparent */
   color: white;           /* Green text color */
   cursor: pointer;
   padding: 18px;
@@ -70,7 +70,7 @@ h1 {
   border: none;          /* Remove any default border */
   text-align: left;
   outline: none;
-  font-size: 1.2em;
+  font-size: 1.0em;
   margin-top: 10px;
   border-radius: 5px;   /* Optional: Rounded corners */
 
@@ -112,6 +112,7 @@ ul li::before {
     color: #4CAF50;
     padding-right: 10px;
 }
+
 .whatsapp-link, .telegram-link {
     display: inline-flex;  /* Changed to inline-flex for alignment */
     align-items: center;   /* Vertically center icon and text */
