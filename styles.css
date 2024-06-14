@@ -35,7 +35,7 @@ footer {
     text-align: center;
 }
 .contact-section {
-    background-color: rgba(76, 175, 80, 0.4);
+    background-color: rgba(76, 175, 80, 0.7);
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -47,18 +47,41 @@ h1 {
 }
 .collapsible {
     font-weight: bold;
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.7);
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
     width: 100%;
     border: none;
-    text-align: center;
+    text-align: left;
     outline: none;
     font-size: 1.2em;
     margin-top: 10px;
     border-radius: 5px;
 }
+
+.collapsible2 {
+  font-weight: bold;
+  background-color: transparent; /* Make it transparent */
+  color: white;           /* Green text color */
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;          /* Remove any default border */
+  text-align: left;
+  outline: none;
+  font-size: 1.2em;
+  margin-top: 10px;
+  border-radius: 5px;   /* Optional: Rounded corners */
+
+  /* Optional: Add a subtle hover effect */
+  transition: color 0.3s ease;
+}
+
+.collapsible:hover {
+  color: #2E8B57; /* Slightly darker green on hover */
+}
+
 .content {
     padding: 0 18px;
     overflow: hidden;
@@ -90,27 +113,25 @@ ul li::before {
     padding-right: 10px;
 }
 .whatsapp-link, .telegram-link {
-    display: inline-block;
-    margin-top: 30px;
+    display: inline-flex;  /* Changed to inline-flex for alignment */
+    align-items: center;   /* Vertically center icon and text */
+    margin-top: 20px;
     text-align: center;
-    padding: 10px 20px;
-    background-color: #25D366;
-    color: white;
+    color: #25D366; /* WhatsApp green for the text */
     text-decoration: none;
-    border-radius: 8px;
     font-weight: bold;
-    transition: background-color 0.3s;
-    margin-right: 20px;
 }
-.whatsapp-link:hover {
-    background-color: #1DA851;
-}
-.telegram-link {
-    background-color: #0088cc;
-}
-.telegram-link:hover {
-    background-color: #007ab8;
-}
+
+/*.whatsapp-link:hover {*/
+/*    background-color: #1DA851;*/
+/*}*/
+/*.telegram-link {*/
+/*    background-color: #0088cc;*/
+/*}*/
+/*.telegram-link:hover {*/
+/*    background-color: #007ab8;*/
+/*}*/
+
 .whatsapp-icon {
     margin-right: 5px;
     vertical-align: middle;
@@ -123,4 +144,55 @@ ul li::before {
 }
 .profile-description {
     margin: 20px 0;
+}
+
+.whatsapp-link img, .telegram-link img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;  /* Maintain aspect ratio */
+  margin-right: 10px;
+}
+
+#schema-therapist-link:hover {
+  cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
