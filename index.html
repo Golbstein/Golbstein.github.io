@@ -19,14 +19,14 @@
         <img src="https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/image.jpeg?raw=true" alt="Profile Image" class="profile-img">
         <h1>Виктория Сороковская</h1>
 
-        <h1 style="font-size: 28px; font-weight: bold;">Схема-Терапевт</h1>
+        <h1 style="font-size: 24px; font-weight: bold;">Схема-Терапевт</h1>
 
 <!--        <h1 style="font-size: 28px; font-weight: bold;">Схема-Терапевт</h1>-->
         <div class="contact-section">
             <p style="color: white; font-size: 22px;"><strong><u>Запросы, с которыми работаю:</u></strong></p>
 
 
-            <button class="collapsible2"><li>Чувства и мысли, переживания и состояния</li></button>
+            <button class="collapsible2">Чувства и мысли, переживания и состояния</button>
             <div class="content">
                 <ul>
                     <li>Тревога, беспокойство, навязчивые мысли</li>
@@ -37,7 +37,7 @@
                 </ul>
             </div>
 
-            <button class="collapsible2"><li>Отношения с собой</li></button>
+            <button class="collapsible2">Отношения с собой</button>
             <div class="content">
                 <ul>
                     <li>Низкая самооценка, восприимчивость к мнению окружающих, поиск себя</li>
@@ -45,7 +45,7 @@
                 </ul>
             </div>
 
-            <button class="collapsible2" onclick="toggleCollapsible(event)"><li>Отношения с другими людьми</li></button>
+            <button class="collapsible2" onclick="toggleCollapsible(event)">Отношения с другими людьми</button>
             <div class="content">
                 <ul>
                     <li>Стеснительность, не возможность отстоять себя и высказать мнение</li>
@@ -58,9 +58,9 @@
 
         <div class="contact-section">
             <p style="color: white; font-size: 22px; text-align: left;"><strong><u>Запись на консультацию</u></strong></p>
-            <p style="color: white; font-size: 16px">Онлайн-консультация 55 мин</p>
-            <p style="color: white; font-size: 16px">2500 рублей ( 30$ при оплате не из РФ )</p>
-            <p style="color: white; font-size: 16px">Работаю со взрослыми. Не работаю с детьми и семейным парами.</p>
+            <p style="color: white">Онлайн-консультация 55 мин</p>
+            <p style="color: white">2500 рублей ( 30$ при оплате не из РФ )</p>
+            <p style="color: white">Работаю со взрослыми. Не работаю с детьми и семейным парами.</p>
 
             <a href="https://wa.me/972586211989" class="contact-link whatsapp-link">
               <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" target="_blank" width="20">
@@ -127,7 +127,7 @@
             for (var i = 0; i < coll.length; i++) {
                 coll[i].classList.add("active");
                 var content = coll[i].nextElementSibling;
-                content.style.display = "none";
+                content.style.display = "block";
 
                 coll[i].addEventListener("click", function() {
                     this.classList.toggle("active");
