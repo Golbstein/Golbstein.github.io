@@ -49,6 +49,7 @@ h1 {
     margin-bottom: 20px;
     /*color: rgba(173, 210, 240, 1.8);*/
     color: rgb(100, 149, 237);
+    font-weight: bold;
     /*color: #504CAF;*/
 }
 /*.collapsible {*/
@@ -77,7 +78,7 @@ h1 {
   text-align: left;
   font-family: "Lato", sans-serif;
   outline: none;
-  font-size: 1.0em;
+  font-size: 0.9em;
   margin-top: 10px;
   border-radius: 5px;
 
@@ -115,6 +116,7 @@ p, ul {
     margin: 15px 0;
     line-height: 1.6;
     font-size: 1.0em;
+    font-weight: bold;
     text-align: left;
 }
 ul {
