@@ -1,5 +1,8 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Merriweather", serif;
+    /*font-family: "Lato", sans-serif;*/
+    /*font-family: "Open Sans", sans-serif;*/
+
     background: #f4f4f9;
     color: #333;
     margin: 0;
@@ -24,9 +27,10 @@ footer {
     margin-top: auto;
 }
 .container {
-    background: linear-gradient(to bottom, #f5f5dc, #d2b48c);
+    /*background: linear-gradient(to bottom, #f5f5dc, #d2b48c);*/
+    background: linear-gradient(to bottom, rgb(220, 232, 245), rgb(100, 149, 237));
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     max-width: 800px;
     width: 90%;
     padding: 30px;
@@ -35,7 +39,7 @@ footer {
     text-align: center;
 }
 .contact-section {
-    background-color: rgba(76, 175, 80, 0.7);
+    background-color: rgba(173, 210, 240, 1.8);
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -43,44 +47,60 @@ footer {
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #6EBB63;
+    /*color: rgba(173, 210, 240, 1.8);*/
+    color: rgb(100, 149, 237);
+    /*color: #504CAF;*/
 }
-.collapsible {
-    font-weight: bold;
-    background-color: rgba(76, 175, 65, 0.6);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.2em;
-    margin-top: 10px;
-    border-radius: 5px;
-}
+/*.collapsible {*/
+/*    font-weight: bold;*/
+/*    background-color: rgba(173, 214, 230, 0.5);*/
+/*    color: white;*/
+/*    cursor: pointer;*/
+/*    padding: 15px;*/
+/*    width: 100%;*/
+/*    border: none;*/
+/*    text-align: left;*/
+/*    outline: none;*/
+/*    font-size: 1.2em;*/
+/*    margin-top: 10px;*/
+/*    border-radius: 5px;*/
+/*}*/
 
 .collapsible2 {
   font-weight: bold;
-  background-color: rgba(76, 175, 65, 0.6); /* Make it transparent */
-  color: white;           /* Green text color */
+  background-color: rgba(173, 224, 230, 0.5); /* Make it transparent */
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;          /* Remove any default border */
   text-align: left;
+  font-family: "Merriweather", serif;
   outline: none;
-  font-size: 1.0em;
+  font-size: 1.3em;
   margin-top: 10px;
-  border-radius: 5px;   /* Optional: Rounded corners */
+  border-radius: 5px;
 
-  /* Optional: Add a subtle hover effect */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Push content to the edges */
+
   transition: color 0.3s ease;
 }
 
 .collapsible:hover {
-  color: #2E8B57; /* Slightly darker green on hover */
+  color: rgba(82, 80, 173, 0.7); /* Slightly darker green on hover */
 }
+.collapsible2:hover {
+  color: rgb(100, 149, 237); /* Slightly darker green on hover */
+}
+
+.collapsible2::after { /* Create the "V" symbol */
+  content: "\2228";
+  font-size: 1.2em;
+  margin-left: 10px; /* Adjust spacing as needed */
+}
+
 
 .content {
     padding: 0 18px;
@@ -94,7 +114,7 @@ h1 {
 p, ul {
     margin: 15px 0;
     line-height: 1.6;
-    font-size: 1.1em;
+    font-size: 1.0em;
     text-align: left;
 }
 ul {
@@ -109,7 +129,7 @@ ul li {
 ul li::before {
     font-size: 1.2em;
     content: "•";
-    color: #4CAF50;
+    color: #504CAF;
     padding-right: 10px;
 }
 
@@ -138,10 +158,10 @@ ul li::before {
     vertical-align: middle;
 }
 .profile-img {
-    width: 190px;
-    height: 190px;
-    border-radius: 80%;
-    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 90%;
+    margin: 10px auto;
 }
 .profile-description {
     margin: 20px 0;
