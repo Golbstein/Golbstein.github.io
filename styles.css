@@ -106,7 +106,7 @@ h1 {
 .content {
     padding: 0 18px;
     overflow: hidden;
-    background-color: #f9f9f9;
+    background-color: rgba(173, 210, 240, 1.8);
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -115,6 +115,7 @@ h1 {
 p, ul {
     margin: 15px 0;
     line-height: 1.6;
+    color: white;
     font-size: 1.0em;
     font-weight: bold;
     text-align: left;
@@ -131,7 +132,7 @@ ul li {
 ul li::before {
     font-size: 1.2em;
     content: "•";
-    color: #504CAF;
+    color: rgb(240, 240, 240);
     padding-right: 10px;
 }
 
