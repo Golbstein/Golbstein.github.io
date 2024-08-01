@@ -62,9 +62,10 @@ footer {
 }
 
 .text-container h2 {
-    font-size: 1.5em; /* Adjust size as needed */
-    margin: 0;
+    font-size: 1.2em; /* Adjust size as needed */
+    margin-bottom: 10%;
     color: white; /* Text color */
+    font-weight: normal;
 }
 
 @media (max-width: 600px) {
