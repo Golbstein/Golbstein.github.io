@@ -47,7 +47,7 @@ footer {
 
 .text-container h1 {
     font-size: 2em;
-    margin-top: 70px; /* Margin from the top */
+    margin-top: 2vh; /* Margin from the top */
     margin-bottom: 10px;
     color: rgb(255, 255, 255);
 }
