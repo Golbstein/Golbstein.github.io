@@ -1,8 +1,5 @@
 body {
-    /*font-family: "Merriweather", serif;*/
     font-family: "Lato", sans-serif;
-    /*font-family: "Open Sans", sans-serif;*/
-
     background: #f4f4f9;
     color: #333;
     margin: 0;
@@ -11,6 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 header {
     background-color: #333;
     padding: 20px;
@@ -19,6 +17,7 @@ header {
     font-size: 2em;
     font-weight: bold;
 }
+
 footer {
     background-color: #333;
     color: white;
@@ -26,6 +25,7 @@ footer {
     padding: 10px 0;
     margin-top: auto;
 }
+
 .container {
     /*background: linear-gradient(to bottom, #f5f5dc, #d2b48c);*/
     background: linear-gradient(to bottom, rgb(42,  85,  109), rgb(27, 39, 54));
@@ -38,6 +38,7 @@ footer {
     box-sizing: border-box;
     text-align: center;
 }
+
 .contact-section {
     background-color: rgba(173, 224, 230, 0.5);
     padding: 20px;
@@ -45,58 +46,42 @@ footer {
     margin-top: 20px;
 }
 
+
 .text-container {
-    flex: 1; /* Allows text container to take the remaining space */
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Center text and image */
+    margin: 20px auto; /* Center the container */
+    max-width: 800px; /* Adjust as needed */
+    width: 90%; /* Responsive width */
+    box-sizing: border-box;
 }
 
 .text-container h1 {
-    font-size: 1.8em; /* Adjust size as needed */
+    font-size: 2em; /* Adjust size as needed */
     margin: 0;
-    color: #fff; /* Text color */
+    color: white; /* Text color */
 }
 
 .text-container h2 {
-    font-size: 1.2em; /* Adjust size as needed */
+    font-size: 1.5em; /* Adjust size as needed */
     margin: 0;
-    color: #ddd; /* Text color */
+    color: white; /* Text color */
 }
 
 @media (max-width: 600px) {
-    .image-text-container {
-        flex-direction: column; /* Stack image and text on small screens */
-        text-align: center; /* Center text on small screens */
+    .text-container h1 {
+        font-size: 1.5em; /* Adjust size for smaller screens */
+    }
+
+    .text-container h2 {
+        font-size: 1.2em; /* Adjust size for smaller screens */
     }
 
     .profile-img {
-        margin-right: 0;
-        margin-bottom: 10px; /* Space below the image */
+        width: 120px; /* Adjust width for smaller screens */
+        margin-top: 15px; /* Adjust spacing for smaller screens */
     }
 }
 
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    /*color: rgba(173, 210, 240, 1.8);*/
-    color: rgb(100, 149, 237);
-    font-weight: bold;
-    /*color: #504CAF;*/
-}
-/*.collapsible {*/
-/*    font-weight: bold;*/
-/*    background-color: rgba(173, 214, 230, 0.5);*/
-/*    color: white;*/
-/*    cursor: pointer;*/
-/*    padding: 15px;*/
-/*    width: 100%;*/
-/*    border: none;*/
-/*    text-align: left;*/
-/*    outline: none;*/
-/*    font-size: 1.2em;*/
-/*    margin-top: 10px;*/
-/*    border-radius: 5px;*/
-/*}*/
 
 .collapsible2 {
   font-weight: bold;
@@ -112,20 +97,11 @@ h1 {
   font-size: 0.9em;
   margin-top: 10px;
   border-radius: 5px;
-
   display: flex;
   align-items: center;
   justify-content: space-between; /* Push content to the edges */
-
-  /*transition: color 0.3s ease;*/
 }
 
-/*.collapsible:hover {*/
-/*  color: rgba(82, 80, 173, 0.7); !* Slightly darker green on hover *!*/
-/*}*/
-/*.collapsible2:hover {*/
-/*  color: rgb(100, 149, 237); !* Slightly darker green on hover *!*/
-/*}*/
 
 .collapsible2::after { /* Create the "V" symbol */
   content: "\2228";
@@ -143,6 +119,7 @@ h1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: block;
 }
+
 p, ul {
     margin: 15px 0;
     line-height: 1.6;
@@ -151,15 +128,18 @@ p, ul {
     font-weight: bold;
     text-align: left;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
     text-align: left;
 }
+
 ul li {
     padding-left: 20px;
     text-indent: -20px;
 }
+
 ul li::before {
     font-size: 1.2em;
     content: "•";
@@ -177,15 +157,6 @@ ul li::before {
     font-weight: bold;
 }
 
-/*.whatsapp-link:hover {*/
-/*    background-color: #1DA851;*/
-/*}*/
-/*.telegram-link {*/
-/*    background-color: #0088cc;*/
-/*}*/
-/*.telegram-link:hover {*/
-/*    background-color: #007ab8;*/
-/*}*/
 
 .whatsapp-icon {
     margin-right: 5px;
@@ -204,21 +175,14 @@ ul li::before {
 }
 
 .profile-img {
-    width: 150px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px; /* Adjust width as needed */
+    height: 230px; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: adjust border radius */
     object-fit: cover; /* Ensure the image covers the frame */
-    margin-right: 20px; /* Space between image and text */
+    margin-top: 20px; /* Space between title and image */
+    object-position: center;
 }
 
-
-/*.profile-img {*/
-/*    width: 250px; !* Set the desired width *!*/
-/*    height: 250px; !* Set the desired height *!*/
-/*    border-radius: 2%; !* Set to 0 for a rectangular frame *!*/
-/*    object-fit: cover; !* Cover the frame *!*/
-/*    object-position: left; !* Position the image to the left within the frame *!*/
-}
 
 .image-container {
     display: flex;
