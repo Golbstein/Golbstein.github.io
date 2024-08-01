@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Виктория Схема Терапевт</title>
     <!-- <link rel="icon" href="/assets/2912999.ico" type="image/x-icon"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,15 +16,18 @@
     </header> -->
 
     <div class="container">
+<!--        <img src="https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/image.jpeg?raw=true" alt="Profile Image" class="profile-img">-->
         <div class="image-container">
             <img src="https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/IMG_1368.jpg?raw=true" alt="Profile Image" class="profile-img">
             <div class="text-container">
                 <h1>Виктория Сороковская</h1>
-                <h2>Схема-Терапевт, Психолог-Консультант</h2>
+                <h2 style="font-size: 24px; font-weight: bold;">Схема-Терапевт, Психолог-Консультант</h2>
             </div>
         </div>
 
-        <p><strong><u>Запросы, с которыми работаю:</u></strong></p>
+<!--        <h1 style="font-size: 28px; font-weight: bold;">Схема-Терапевт</h1>-->
+<!--        <div class="contact-section">-->
+        <p style="color: white; font-size: 1.4em;"><strong><u>Запросы, с которыми работаю:</u></strong></p>
 
         <button class="collapsible2">Чувства и мысли, переживания и состояния</button>
         <div class="content">
@@ -44,7 +48,7 @@
             </ul>
         </div>
 
-        <button class="collapsible2">Отношения с другими людьми</button>
+        <button class="collapsible2" onclick="toggleCollapsible(event)">Отношения с другими людьми</button>
         <div class="content">
             <ul>
                 <li>Стеснительность, не возможность отстоять себя и высказать мнение</li>
@@ -52,45 +56,82 @@
                 <li>Отношения с родителями и близкими родственниками</li>
             </ul>
         </div>
+<!--        </div>-->
+
 
         <div class="contact-section">
-            <p><strong><u>Запись на консультацию</u></strong></p>
-            <p>Онлайн-консультация 55 мин</p>
-            <p>2500 рублей (30$ при оплате не из РФ)</p>
-            <p>Работаю со взрослыми. Не работаю с детьми и семейными парами.</p>
+            <p style="color: white; font-size: 1.4em; text-align: left;"><strong><u>Запись на консультацию</u></strong></p>
+            <p style="color: white">Онлайн-консультация 55 мин</p>
+            <p style="color: white">2500 рублей (30$ при оплате не из РФ)</p>
+            <p style="color: white">Работаю со взрослыми. Не работаю с детьми и семейными парами.</p>
 
             <a href="https://wa.me/972586211989" class="contact-link whatsapp-link">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" width="20">
             </a>
             <a href="https://t.me/Victoria_Sorokivskaia" class="contact-link telegram-link">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="whatsapp-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="whatsapp-icon" width="20">
             </a>
+
+            </div>
+
+        <div class="contact-section">
+            <p style="color: white; font-size: 1.4em; text-align: left;"><strong><u>Образование</u></strong></p>
+
+            <p style="color: white">• Профессиональная переподготовка: «Мастерство психологического консультирования» — 500 ч. Психолог-консультант 2022–2024 гг. PSYCHODEMIA</p>
+            <p style="color: white">• Схема-терапия 300 ч. 2023-2024 гг. PSYCHODEMIA</p>
+            <p style="color: white">• «Психиатрия для психологов» 2024г. Международная академия научной психологии </p>
+            <p style="color: white;">• «Как научить клиента справляться с эмоциями» 2024г. PSYCHODEMIA.</p>
+            <p style="color: white;">• Прохожу регулярные супервизии</p>
+            <p style="color: white;">• +100 часов личной терапии</p>
+
         </div>
 
         <div class="contact-section">
-            <p><strong><u>Образование</u></strong></p>
-            <p>• Профессиональная переподготовка: «Мастерство психологического консультирования» — 500 ч. Психолог-консультант 2022–2024 гг. PSYCHODEMIA</p>
-            <p>• Схема-терапия 300 ч. 2023-2024 гг. PSYCHODEMIA</p>
-            <p>• «Психиатрия для психологов» 2024г. Международная академия научной психологии</p>
-            <p>• «Как научить клиента справляться с эмоциями» 2024г. PSYCHODEMIA.</p>
-            <p>• Прохожу регулярные супервизии</p>
-            <p>• +100 часов личной терапии</p>
+            <p style="color: white; font-size: 1.4em; text-align: left;"><strong><u>Схема Терапия</u></strong></p>
+            <p style="color: white;">Схема-терапия помогает разрешить проблему на трех уровнях: когнитивном, поведенческом и эмоциональном (экспериенциальном), что делает ее высоко эффективной даже в самых непростых случаях. Схема-терапия опирается на теорию привязанности, теорию объектных отношений, психологию развития, когнитивную науку, поведенческую науку, современные нейробиологические знания о мозге и его функционировании</p>
         </div>
 
-        <div class="contact-section">
-            <p><strong><u>Схема Терапия</u></strong></p>
-            <p>Схема-терапия помогает разрешить проблему на трех уровнях: когнитивном, поведенческом и эмоциональном (экспериенциальном), что делает ее высоко эффективной даже в самых непростых случаях. Схема-терапия опирается на теорию привязанности, теорию объектных отношений, психологию развития, когнитивную науку, поведенческую науку, современные нейробиологические знания о мозге и его функционировании</p>
-        </div>
+
+<!--        <div class="contact-section">-->
+<!--&lt;!&ndash;            <p style="color: white; font-size: 22px; text-align: center;"><strong><u>Стоимость консультации - 2500₽ / 30$ за 55 минут встречи</u></strong></p>&ndash;&gt;-->
+<!--&lt;!&ndash;            <br>&ndash;&gt;-->
+<!--            <p style="color: white;">Если вы не нашли в списке ваш запрос — это нормально. Возможно, ваша ситуация слишком запутана, чтобы определить запрос самостоятельно. Моя работа предполагает помощь в формировании запроса и разбора спутанной ситуации.</p>-->
+
+<!--        </div>-->
+
     </div>
-
     <footer>
         &copy; 2024 Виктория Сороковская
     </footer>
-
     <script>
+
+
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     var coll = document.getElementsByClassName("collapsible");
+        //     for (var i = 0; i < coll.length; i++) {
+        //         coll[i].classList.add("active");
+        //         var content = coll[i].nextElementSibling;
+        //         content.style.display = "block";
+        //
+        //         coll[i].addEventListener("click", function() {
+        //             this.classList.toggle("active");
+        //             var content = this.nextElementSibling;
+        //             if (content.style.display === "block") {
+        //                 content.style.display = "none";
+        //             } else {
+        //                 content.style.display = "block";
+        //             }
+        //         });
+        //     }
+        // });
+
         document.addEventListener("DOMContentLoaded", function() {
             var coll = document.getElementsByClassName("collapsible2");
             for (var i = 0; i < coll.length; i++) {
+                coll[i].classList.add("active");
+                var content = coll[i].nextElementSibling;
+                content.style.display = "block";
+
                 coll[i].addEventListener("click", function() {
                     this.classList.toggle("active");
                     var content = this.nextElementSibling;
@@ -102,6 +143,8 @@
                 });
             }
         });
+
+
     </script>
 </body>
 </html>
