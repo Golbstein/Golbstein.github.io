@@ -1,8 +1,5 @@
 body {
-    /*font-family: "Merriweather", serif;*/
     font-family: "Lato", sans-serif;
-    /*font-family: "Open Sans", sans-serif;*/
-
     background: #f4f4f9;
     color: #333;
     margin: 0;
@@ -11,14 +8,16 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 header {
     background-color: #333;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em; /* Adjusted for smaller screens */
     font-weight: bold;
 }
+
 footer {
     background-color: #333;
     color: white;
@@ -26,124 +25,100 @@ footer {
     padding: 10px 0;
     margin-top: auto;
 }
+
 .container {
-    /*background: linear-gradient(to bottom, #f5f5dc, #d2b48c);*/
-    background: linear-gradient(to bottom, rgb(42,  85,  109), rgb(27, 39, 54));
+    background: linear-gradient(to bottom, rgb(42, 85, 109), rgb(27, 39, 54));
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    max-width: 800px;
-    width: 90%;
-    padding: 30px;
+    max-width: 90%;
+    width: 100%;
+    padding: 20px;
     margin: 20px auto;
     box-sizing: border-box;
     text-align: center;
 }
+
 .contact-section {
     background-color: rgba(173, 224, 230, 0.5);
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     margin-top: 20px;
 }
 
 .text-container h1 {
-    font-size: 2em;
-    margin-top: 2vh; /* Margin from the top */
+    font-size: 1.8em; /* Responsive font size */
+    margin-top: 3vh; /* Responsive margin */
     margin-bottom: 10px;
     color: rgb(255, 255, 255);
 }
 
 .text-container h2 {
-    font-size: 1.5em;
+    font-size: 1.4em; /* Responsive font size */
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
 
-
 h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    /*color: rgba(173, 210, 240, 1.8);*/
+    font-size: 1.8em; /* Responsive font size */
+    margin-bottom: 15px;
     color: rgb(100, 149, 237);
     font-weight: bold;
-    /*color: #504CAF;*/
 }
-/*.collapsible {*/
-/*    font-weight: bold;*/
-/*    background-color: rgba(173, 214, 230, 0.5);*/
-/*    color: white;*/
-/*    cursor: pointer;*/
-/*    padding: 15px;*/
-/*    width: 100%;*/
-/*    border: none;*/
-/*    text-align: left;*/
-/*    outline: none;*/
-/*    font-size: 1.2em;*/
-/*    margin-top: 10px;*/
-/*    border-radius: 5px;*/
-/*}*/
 
 .collapsible2 {
-  font-weight: bold;
-  background-color: rgba(173, 224, 230, 0.5); /* Make it transparent */
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;          /* Remove any default border */
-  text-align: left;
-  font-family: "Lato", sans-serif;
-  outline: none;
-  font-size: 0.9em;
-  margin-top: 10px;
-  border-radius: 5px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Push content to the edges */
-
-  /*transition: color 0.3s ease;*/
+    font-weight: bold;
+    background-color: rgba(173, 224, 230, 0.5); /* Transparent background */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-family: "Lato", sans-serif;
+    outline: none;
+    font-size: 0.9em;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/*.collapsible:hover {*/
-/*  color: rgba(82, 80, 173, 0.7); !* Slightly darker green on hover *!*/
-/*}*/
-/*.collapsible2:hover {*/
-/*  color: rgb(100, 149, 237); !* Slightly darker green on hover *!*/
-/*}*/
-
-.collapsible2::after { /* Create the "V" symbol */
-  content: "\2228";
-  font-size: 1.2em;
-  margin-left: 10px; /* Adjust spacing as needed */
+.collapsible2::after {
+    content: "\2228";
+    font-size: 1.2em;
+    margin-left: 10px;
 }
-
 
 .content {
-    padding: 0 18px;
+    padding: 0 15px; /* Adjusted for smaller screens */
     overflow: hidden;
     background-color: #963846;
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: block;
 }
+
 p, ul {
-    margin: 15px 0;
+    margin: 10px 0; /* Adjusted margin */
     line-height: 1.6;
     color: white;
-    font-size: 1.0em;
+    font-size: 1em; /* Adjusted font size */
     font-weight: bold;
     text-align: left;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
     text-align: left;
 }
+
 ul li {
-    padding-left: 20px;
-    text-indent: -20px;
+    padding-left: 15px; /* Adjusted padding */
+    text-indent: -15px; /* Adjusted text indent */
 }
+
 ul li::before {
     font-size: 1.2em;
     content: "•";
@@ -152,91 +127,74 @@ ul li::before {
 }
 
 .whatsapp-link, .telegram-link {
-    display: inline-flex;  /* Changed to inline-flex for alignment */
-    align-items: center;   /* Vertically center icon and text */
-    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 15px; /* Adjusted margin */
     text-align: center;
-    color: #25D366; /* WhatsApp green for the text */
+    color: #25D366;
     text-decoration: none;
     font-weight: bold;
 }
-
-/*.whatsapp-link:hover {*/
-/*    background-color: #1DA851;*/
-/*}*/
-/*.telegram-link {*/
-/*    background-color: #0088cc;*/
-/*}*/
-/*.telegram-link:hover {*/
-/*    background-color: #007ab8;*/
-/*}*/
 
 .whatsapp-icon {
     margin-right: 5px;
     vertical-align: middle;
 }
 
-
 .profile-img {
-    width: 250px; /* Set the desired width */
-    height: 250px; /* Set the desired height */
-    border-radius: 2%; /* Set to 0 for a rectangular frame */
-    object-fit: cover; /* Cover the frame */
-    object-position: left; /* Position the image to the left within the frame */
+    width: 200px; /* Adjusted for smaller screens */
+    height: 200px; /* Adjusted for smaller screens */
+    border-radius: 2%;
+    object-fit: cover;
+    object-position: center; /* Center image for better responsiveness */
 }
 
 .image-container {
     display: flex;
-    justify-content: flex-end; /* Aligns the image to the right */
-    padding: 10px; /* Add padding around the container */
+    justify-content: center; /* Center the image container */
+    padding: 10px;
 }
 
-
 .profile-description {
-    margin: 20px 0;
+    margin: 15px 0; /* Adjusted margin */
 }
 
 .whatsapp-link img, .telegram-link img {
-  width: 50px; /* Adjust the width as needed */
-  height: auto;  /* Maintain aspect ratio */
-  margin-right: 10px;
+    width: 40px; /* Adjusted width */
+    height: auto;
+    margin-right: 10px;
 }
 
 #schema-therapist-link:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-
-/* The Modal (background) */
+/* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 60px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* Adjusted margin for smaller screens */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
     border-radius: 10px;
 }
 
-/* The Close Button */
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 24px; /* Adjusted font size */
     font-weight: bold;
 }
 
@@ -245,4 +203,54 @@ ul li::before {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .text-container h1 {
+        font-size: 1.5em;
+        margin-top: 4vh;
+    }
+
+    .text-container h2 {
+        font-size: 1.2em;
+    }
+
+    .collapsible2 {
+        font-size: 0.8em;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    p, ul {
+        font-size: 0.9em;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .whatsapp-link img, .telegram-link img {
+        width: 35px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .close {
+        font-size: 20px;
+    }
 }
