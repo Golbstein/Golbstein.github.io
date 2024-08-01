@@ -11,10 +11,10 @@ body {
 
 header {
     background-color: #333;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     color: white;
-    font-size: 1.5em; /* Adjusted for smaller screens */
+    font-size: 1.5em; /* Adjusted for better fit on smaller screens */
     font-weight: bold;
 }
 
@@ -30,9 +30,9 @@ footer {
     background: linear-gradient(to bottom, rgb(42, 85, 109), rgb(27, 39, 54));
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    max-width: 90%;
-    width: 100%;
-    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+    padding: 20px; /* Adjusted padding for better fit */
     margin: 20px auto;
     box-sizing: border-box;
     text-align: center;
@@ -40,43 +40,43 @@ footer {
 
 .contact-section {
     background-color: rgba(173, 224, 230, 0.5);
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
 }
 
 .text-container h1 {
-    font-size: 1.8em; /* Responsive font size */
-    margin-top: 3vh; /* Responsive margin */
+    font-size: 1.5em; /* Adjusted font size for better fit */
+    margin-top: 1vh; /* Reduced margin for smaller screens */
     margin-bottom: 10px;
     color: rgb(255, 255, 255);
 }
 
 .text-container h2 {
-    font-size: 1.4em; /* Responsive font size */
+    font-size: 1.2em; /* Adjusted font size for better fit */
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
 
 h1 {
-    font-size: 1.8em; /* Responsive font size */
-    margin-bottom: 15px;
+    font-size: 1.5em; /* Adjusted font size for better fit */
+    margin-bottom: 20px;
     color: rgb(100, 149, 237);
     font-weight: bold;
 }
 
 .collapsible2 {
     font-weight: bold;
-    background-color: rgba(173, 224, 230, 0.5); /* Transparent background */
+    background-color: rgba(173, 224, 230, 0.5);
     color: white;
     cursor: pointer;
-    padding: 15px;
+    padding: 15px; /* Reduced padding for better fit */
     width: 100%;
     border: none;
     text-align: left;
     font-family: "Lato", sans-serif;
     outline: none;
-    font-size: 0.9em;
+    font-size: 1em; /* Adjusted font size for better fit */
     margin-top: 10px;
     border-radius: 5px;
     display: flex;
@@ -86,12 +86,12 @@ h1 {
 
 .collapsible2::after {
     content: "\2228";
-    font-size: 1.2em;
+    font-size: 1em; /* Adjusted font size for better fit */
     margin-left: 10px;
 }
 
 .content {
-    padding: 0 15px; /* Adjusted for smaller screens */
+    padding: 0 15px; /* Adjusted padding for better fit */
     overflow: hidden;
     background-color: #963846;
     margin-top: 10px;
@@ -100,10 +100,10 @@ h1 {
 }
 
 p, ul {
-    margin: 10px 0; /* Adjusted margin */
+    margin: 10px 0; /* Adjusted margin for better fit */
     line-height: 1.6;
     color: white;
-    font-size: 1em; /* Adjusted font size */
+    font-size: 1em; /* Adjusted font size for better fit */
     font-weight: bold;
     text-align: left;
 }
@@ -111,16 +111,15 @@ p, ul {
 ul {
     list-style-type: none;
     padding: 0;
-    text-align: left;
 }
 
 ul li {
-    padding-left: 15px; /* Adjusted padding */
-    text-indent: -15px; /* Adjusted text indent */
+    padding-left: 20px;
+    text-indent: -20px;
 }
 
 ul li::before {
-    font-size: 1.2em;
+    font-size: 1em; /* Adjusted font size for better fit */
     content: "•";
     color: rgb(240, 240, 240);
     padding-right: 10px;
@@ -129,72 +128,69 @@ ul li::before {
 .whatsapp-link, .telegram-link {
     display: inline-flex;
     align-items: center;
-    margin-top: 15px; /* Adjusted margin */
+    margin-top: 20px;
     text-align: center;
     color: #25D366;
     text-decoration: none;
     font-weight: bold;
 }
 
-.whatsapp-icon {
+.whatsapp-icon, .telegram-icon {
     margin-right: 5px;
     vertical-align: middle;
+    width: 30px; /* Adjusted width for better fit */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .profile-img {
-    width: 200px; /* Adjusted for smaller screens */
-    height: 200px; /* Adjusted for smaller screens */
-    border-radius: 2%;
+    width: 100%; /* Adjust to fit the container */
+    max-width: 250px; /* Max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Adjust border radius */
     object-fit: cover;
-    object-position: center; /* Center image for better responsiveness */
 }
 
 .image-container {
     display: flex;
-    justify-content: center; /* Center the image container */
+    justify-content: center; /* Center align image on smaller screens */
     padding: 10px;
 }
 
 .profile-description {
-    margin: 15px 0; /* Adjusted margin */
-}
-
-.whatsapp-link img, .telegram-link img {
-    width: 40px; /* Adjusted width */
-    height: auto;
-    margin-right: 10px;
+    margin: 20px 0;
 }
 
 #schema-therapist-link:hover {
     cursor: pointer;
 }
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
+    padding-top: 60px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 10% auto; /* Adjusted margin for smaller screens */
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 90%; /* Adjusted for better fit */
+    max-width: 600px; /* Max width for larger screens */
     border-radius: 10px;
 }
 
 .close {
     color: #aaa;
     float: right;
-    font-size: 24px; /* Adjusted font size */
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -203,54 +199,4 @@ ul li::before {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-
-/* Media Queries for Smaller Devices */
-@media (max-width: 600px) {
-    header {
-        font-size: 1.2em;
-        padding: 15px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    .text-container h1 {
-        font-size: 1.5em;
-        margin-top: 4vh;
-    }
-
-    .text-container h2 {
-        font-size: 1.2em;
-    }
-
-    .collapsible2 {
-        font-size: 0.8em;
-    }
-
-    .content {
-        padding: 0 10px;
-    }
-
-    p, ul {
-        font-size: 0.9em;
-    }
-
-    .profile-img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .whatsapp-link img, .telegram-link img {
-        width: 35px;
-    }
-
-    .modal-content {
-        width: 90%;
-    }
-
-    .close {
-        font-size: 20px;
-    }
 }
