@@ -28,7 +28,7 @@ footer {
 }
 .container {
     /*background: linear-gradient(to bottom, #f5f5dc, #d2b48c);*/
-    background: linear-gradient(to bottom, rgb(220, 232, 245), rgb(100, 149, 237));
+    background: linear-gradient(to bottom, rgb(42,  85,  109), rgb(27, 39, 54));
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     max-width: 800px;
@@ -39,11 +39,26 @@ footer {
     text-align: center;
 }
 .contact-section {
-    background-color: rgba(173, 210, 240, 1.8);
+    background-color: rgba(173, 224, 230, 0.5);
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
 }
+
+.text-container h1 {
+    font-size: 2em;
+    margin-top: 70px; /* Margin from the top */
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.text-container h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -86,15 +101,15 @@ h1 {
   align-items: center;
   justify-content: space-between; /* Push content to the edges */
 
-  transition: color 0.3s ease;
+  /*transition: color 0.3s ease;*/
 }
 
-.collapsible:hover {
-  color: rgba(82, 80, 173, 0.7); /* Slightly darker green on hover */
-}
-.collapsible2:hover {
-  color: rgb(100, 149, 237); /* Slightly darker green on hover */
-}
+/*.collapsible:hover {*/
+/*  color: rgba(82, 80, 173, 0.7); !* Slightly darker green on hover *!*/
+/*}*/
+/*.collapsible2:hover {*/
+/*  color: rgb(100, 149, 237); !* Slightly darker green on hover *!*/
+/*}*/
 
 .collapsible2::after { /* Create the "V" symbol */
   content: "\2228";
@@ -106,7 +121,7 @@ h1 {
 .content {
     padding: 0 18px;
     overflow: hidden;
-    background-color: rgba(173, 210, 240, 1.8);
+    background-color: #963846;
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -160,12 +175,23 @@ ul li::before {
     margin-right: 5px;
     vertical-align: middle;
 }
+
+
 .profile-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 90%;
-    margin: 10px auto;
+    width: 250px; /* Set the desired width */
+    height: 250px; /* Set the desired height */
+    border-radius: 2%; /* Set to 0 for a rectangular frame */
+    object-fit: cover; /* Cover the frame */
+    object-position: left; /* Position the image to the left within the frame */
 }
+
+.image-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the image to the right */
+    padding: 10px; /* Add padding around the container */
+}
+
+
 .profile-description {
     margin: 20px 0;
 }
