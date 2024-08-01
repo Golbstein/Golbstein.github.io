@@ -68,14 +68,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .text-container h1 {
-        font-size: 1.5em; /* Adjust size for smaller screens */
-    }
-
-    .text-container h2 {
-        font-size: 1.2em; /* Adjust size for smaller screens */
-    }
-
     .profile-img {
         width: 120px; /* Adjust width for smaller screens */
         margin-top: 15px; /* Adjust spacing for smaller screens */
