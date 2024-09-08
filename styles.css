@@ -171,13 +171,12 @@ ul li::before {
 
 .profile-img {
     width: 200px; /* Adjust width as needed */
-    height: 230px; /* Maintain aspect ratio */
+    height: 200px; /* Maintain aspect ratio */
     border-radius: 50%; /* Make the image circular */
     object-fit: cover; /* Ensure the image covers the frame */
     margin-top: 20px; /* Space between title and image */
     object-position: center;
 }
-
 
 .image-container {
     display: flex;
