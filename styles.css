@@ -71,8 +71,8 @@ footer {
 @media (max-width: 600px) {
 
     .profile-img {
-        width: 120px; /* Adjust width for smaller screens */
-        height: 120px;
+        width: 100px; /* Adjust width for smaller screens */
+        height: 100px;
         margin-top: 10px; /* Adjust spacing for smaller screens */
     }
 }
@@ -170,8 +170,8 @@ ul li::before {
 }
 
 .profile-img {
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Maintain aspect ratio */
+    width: 170px; /* Adjust width as needed */
+    height: 170px; /* Maintain aspect ratio */
     border-radius: 50%; /* Make the image circular */
     object-fit: cover; /* Ensure the image covers the frame */
     margin-top: 20px; /* Space between title and image */
