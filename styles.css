@@ -260,3 +260,18 @@ ul li::before {
 .diploma-box:hover {
     background-color: rgba(173, 224, 230, 0.8);
 }
+
+.element {
+    background: url('https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/img3.jpg?raw=true') no-repeat center bottom; /* Updated line */
+    background-size: 100% auto; /* Ensures full width while maintaining aspect ratio */
+    width: 100%;
+    min-height: 30vh; /* Adjust height as needed */
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    .element {
+        background-size: contain; /* Ensures the whole image is always visible */
+        min-height: 40vh; /* Adjust for taller screens */
+    }
+}
