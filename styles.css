@@ -1,6 +1,9 @@
 body {
     font-family: "Lato", sans-serif;
-    background: #f4f4f9;
+    /*background: #f4f4f9;*/
+    background: url('https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/img3.jpg?raw=true') no-repeat center bottom; /* Updated line */
+    background-size: cover; /* Ensures the image covers the entire background */
+
     color: #333;
     margin: 0;
     padding: 0;
@@ -28,7 +31,7 @@ footer {
 
 .container {
     /*background: linear-gradient(to bottom, #f5f5dc, #d2b48c);*/
-    background: linear-gradient(to bottom, rgb(42,  85,  109), rgb(27, 39, 54));
+    background: linear-gradient(to bottom, rgb(42,  85,  109, 0.5), rgb(27, 39, 54, 0.5));
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     max-width: 800px;
