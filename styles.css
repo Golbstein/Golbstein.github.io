@@ -1,7 +1,7 @@
 body {
     font-family: "Lato", sans-serif;
     /*background: #f4f4f9;*/
-    background: url('https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/img3.jpg?raw=true') no-repeat center bottom; /* Updated line */
+    background: url('https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/image.jpg?raw=true') no-repeat center bottom; /* Updated line */
     background-size: cover; /* Ensures the image covers the entire background */
 
     color: #333;
@@ -262,7 +262,7 @@ ul li::before {
 }
 
 .element {
-    background: url('https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/img3.jpg?raw=true') no-repeat center bottom; /* Updated line */
+    background: url('https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/image.jpg?raw=true') no-repeat center bottom; /* Updated line */
     background-size: 100% auto; /* Ensures full width while maintaining aspect ratio */
     width: 100%;
     min-height: 30vh; /* Adjust height as needed */
