@@ -4,139 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Виктория Схема Терапевт</title>
-    <!-- <link rel="icon" href="/assets/2912999.ico" type="image/x-icon"> -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://github.com/Golbstein/Golbstein.github.io/raw/main/assets/2912999.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="container">
-
-        <div class="text-container">
-            <img src="https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/igrushka_lialia.png?raw=true" alt="Profile Image" class="profile-img">
+        <header class="text-container">
+            <img src="https://github.com/Golbstein/Golbstein.github.io/raw/main/assets/igrushka_lialia.png" alt="Виктория Сороковская" class="profile-img" loading="lazy">
             <h1>Виктория Сороковская</h1>
             <h2>Схема-Терапевт, Психолог-Консультант</h2>
-            <h2><strong>Психотерапия</strong> — это пространство, где мы можем безопасно исследовать ваши переживания, эмоции и мысли. Это процесс, в котором вы получаете поддержку в решении сложных ситуаций, будь то тревога, проблемы в отношениях или просто желание лучше понять себя. Мы будем работать вместе, чтобы выявить причины ваших трудностей и найти пути их преодоления.</h2>
-        </div>
-        <p style="color: white; font-size: 1.4em;"><strong><u>Запросы, с которыми работаю:</u></strong></p>
+            <p class="intro-text"><strong>Психотерапия</strong> — это пространство, где мы можем безопасно исследовать ваши переживания, эмоции и мысли. Это процесс, в котором вы получаете поддержку в решении сложных ситуаций, будь то тревога, проблемы в отношениях или желание лучше понять себя.</p>
+        </header>
 
-        <button class="collapsible2">Чувства и мысли, переживания и состояния</button>
-<!--        <div class="content">-->
+        <section class="issues-section">
+            <h3><u>Запросы, с которыми работаю:</u></h3>
+            <button class="collapsible2" aria-expanded="true" aria-controls="issues1">Чувства и мысли, переживания и состояния</button>
+            <div class="content" id="issues1">
+                <ul>
+                    <li>Тревога, беспокойство, навязчивые мысли</li>
+                    <li>Обида, вина, злость, агрессия</li>
+                    <li>Страхи, фобии, панические атаки</li>
+                    <li>Одиночество, грусть, тоска</li>
+                    <li>Стресс, выгорание, прокрастинация</li>
+                </ul>
+            </div>
+
+            <button class="collapsible2" aria-expanded="true" aria-controls="issues2">Отношения с собой</button>
+            <div class="content" id="issues2">
+                <ul>
+                    <li>Низкая самооценка, восприимчивость к мнению окружающих, поиск себя</li>
+                    <li>Сложности в принятии решений, перфекционизм, гиперответственность</li>
+                </ul>
+            </div>
+
+            <button class="collapsible2" aria-expanded="true" aria-controls="issues3">Отношения с другими людьми</button>
+            <div class="content" id="issues3">
+                <ul>
+                    <li>Стеснительность, невозможность отстоять себя и высказать мнение</li>
+                    <li>Проблемы с доверием, конфликты, чувствительность</li>
+                    <li>Отношения с родителями и близкими родственниками</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h3><u>Запись на консультацию</u></h3>
+            <p>Онлайн-консультация 60 мин: 3000 рублей / 30€</p>
+            <p>Работаю со взрослыми. Не работаю с детьми и семейными парами.</p>
+            <div class="contact-links">
+                <a href="https://wa.me/972586211989" class="contact-link whatsapp-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="contact-icon" width="24">
+                    WhatsApp
+                </a>
+                <a href="https://t.me/Victoria_Sorokivskaia" class="contact-link telegram-link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="contact-icon" width="24">
+                    Telegram
+                </a>
+            </div>
+        </section>
+
+        <section class="education-section">
+            <h3><u>Образование</u></h3>
             <ul>
-                <li>Тревога, беспокойство, навязчивые мысли</li>
-                <li>Обида, вина, злость, агрессия</li>
-                <li>Страхи, фобии, панические атаки</li>
-                <li>Одиночество, грусть, тоска</li>
-                <li>Стресс, выгорание, прокрастинация</li>
+                <li>Профессиональная переподготовка: «Мастерство психологического консультирования» Психолог-консультант, 2022–2024, PSYCHODEMIA</li>
+                <li>Схема-терапия, 2023–2024, PSYCHODEMIA</li>
+                <li>«Психиатрия для психологов», 2024, Международная академия научной психологии</li>
+                <li>«Как научить клиента справляться с эмоциями», 2024, PSYCHODEMIA</li>
+                <li>«Психотерапия с нейроотличными клиентами: от нейронауки к практике», МИСТ</li>
+                <li>Прохожу регулярные супервизии</li>
+                <li>Обучение КПТ в АКПП (в процессе)</li>
             </ul>
-<!--        </div>-->
-
-        <button class="collapsible2">Отношения с собой</button>
-<!--        <div class="content">-->
-            <ul>
-                <li>Низкая самооценка, восприимчивость к мнению окружающих, поиск себя</li>
-                <li>Сложности в принятии решений, перфекционизм, гиперответственность</li>
-            </ul>
-<!--        </div>-->
-
-        <button class="collapsible2" onclick="toggleCollapsible(event)">Отношения с другими людьми</button>
-<!--        <div class="content">-->
-            <ul>
-                <li>Стеснительность, не возможность отстоять себя и высказать мнение</li>
-                <li>Проблемы с доверием, конфликты, чувствительность</li>
-                <li>Отношения с родителями и близкими родственниками</li>
-            </ul>
-<!--        </div>-->
-<!--        </div>-->
-
-
-<!--        <div class="contact-section">-->
-            <p style="color: white; font-size: 1.4em; text-align: left; margin-top: 5%"><strong><u>Запись на консультацию</u></strong></p>
-            <p style="color: white">Онлайн-консультация 60 мин 3000 рублей / 30€</p>
-            <p style="color: white">Работаю со взрослыми. Не работаю с детьми и семейными парами.</p>
-
-            <a href="https://wa.me/972586211989" class="contact-link whatsapp-link">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" width="20">
-            </a>
-            <a href="https://t.me/Victoria_Sorokivskaia" class="contact-link telegram-link">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="whatsapp-icon" width="20">
-            </a>
-
-            <br><br>
-<!--             <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Golbstein/Golbstein.github.io/main/assets/document.pdf" class="diploma-box">
-                Информированное согласие на психотерапию
-            </a>
- -->
-<!--        </div>-->
-
-<!--        <div class="contact-section">-->
-            <p style="color: white; font-size: 1.4em; text-align: left;"><strong><u>Образование</u></strong></p>
-
-            <p style="color: white">• Профессиональная переподготовка: «Мастерство психологического консультирования» Психолог-консультант 2022–2024 гг. PSYCHODEMIA</p>
-            <p style="color: white">• Схема-терапия. 2023-2024 гг. PSYCHODEMIA</p>
-            <p style="color: white">• «Психиатрия для психологов» 2024г. Международная академия научной психологии </p>
-            <p style="color: white;">• «Как научить клиента справляться с эмоциями» 2024г. PSYCHODEMIA.</p>
-            <p style="color: white;">• «Психотерапия с нейроотличными клиентами: от нейронауки к практике» МИСТ</p>
-            <p style="color: white;">• Прохожу регулярные супервизии</p>
-            <p style="color: white;">• Сейчас прохожу обучение КПТ в АКПП</p>
-
-<!--        </div>-->
-
-
-<!--        <div class="contact-section">-->
-<!--&lt;!&ndash;            <p style="color: white; font-size: 22px; text-align: center;"><strong><u>Стоимость консультации - 2500₽ / 30$ за 55 минут встречи</u></strong></p>&ndash;&gt;-->
-<!--&lt;!&ndash;            <br>&ndash;&gt;-->
-<!--            <p style="color: white;">Если вы не нашли в списке ваш запрос — это нормально. Возможно, ваша ситуация слишком запутана, чтобы определить запрос самостоятельно. Моя работа предполагает помощь в формировании запроса и разбора спутанной ситуации.</p>-->
-
-<!--        </div>-->
-
+        </section>
     </div>
+
     <footer>
-        &copy; 2024 Виктория Сороковская
+        © 2025 Виктория Сороковская
     </footer>
+
     <script>
-
-
-        // document.addEventListener("DOMContentLoaded", function() {
-        //     var coll = document.getElementsByClassName("collapsible");
-        //     for (var i = 0; i < coll.length; i++) {
-        //         coll[i].classList.add("active");
-        //         var content = coll[i].nextElementSibling;
-        //         content.style.display = "block";
-        //
-        //         coll[i].addEventListener("click", function() {
-        //             this.classList.toggle("active");
-        //             var content = this.nextElementSibling;
-        //             if (content.style.display === "block") {
-        //                 content.style.display = "none";
-        //             } else {
-        //                 content.style.display = "block";
-        //             }
-        //         });
-        //     }
-        // });
-
-        document.addEventListener("DOMContentLoaded", function() {
-            var coll = document.getElementsByClassName("collapsible2");
-            for (var i = 0; i < coll.length; i++) {
-                coll[i].classList.add("active");
-                var content = coll[i].nextElementSibling;
-                content.style.display = "block";
-
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
+        document.addEventListener("DOMContentLoaded", () => {
+            const collapsibles = document.querySelectorAll(".collapsible2");
+            collapsibles.forEach(button => {
+                button.classList.add("active");
+                const content = button.nextElementSibling;
+                content.style.display = "block"; // Keep open by default
+                button.addEventListener("click", () => {
+                    const isActive = button.classList.toggle("active");
+                    content.style.display = isActive ? "block" : "none";
+                    button.setAttribute("aria-expanded", isActive);
                 });
-            }
+            });
         });
-
-
     </script>
 </body>
 </html>
