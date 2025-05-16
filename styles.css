@@ -1,277 +1,237 @@
-body {
-    font-family: "Lato", sans-serif;
-    /*background: #f4f4f9;*/
-    background: url('https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/image.jpg?raw=true') no-repeat center bottom / cover fixed;
-    background-size: cover; /* Ensures the image covers the entire background */
-
-    color: #333;
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    padding: 20px;
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: url('https://github.com/Golbstein/Golbstein.github.io/raw/main/assets/image.jpg') no-repeat center bottom / cover fixed;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background: linear-gradient(to bottom, rgb(42, 85, 109, 0.5), rgb(27, 39, 54, 0.5));
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.text-container {
     text-align: center;
-    color: white;
-    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.text-container h1 {
+    font-size: 2.2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.text-container h2 {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.text-container .intro-text {
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+}
+
+.issues-section, .contact-section, .education-section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.collapsible2 {
+    background: rgba(173, 224, 230, 0.5);
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 0.9em;
     font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.collapsible2::after {
+    content: '\2228';
+    position: absolute;
+    right: 15px;
+    font-size: 1.2em;
+}
+
+.collapsible2.active::after {
+    content: '\2227';
+}
+
+.collapsible2:hover {
+    background: rgba(173, 224, 230, 0.8);
+}
+
+.content {
+    padding: 0 18px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    background: transparent; /* Removed #963846, blends with container */
+}
+
+.content ul {
+    list-style: none;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.content ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.content ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: rgb(240, 240, 240);
+    font-size: 1.2em;
+}
+
+.contact-section {
+    background: rgba(173, 224, 230, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    background: rgba(173, 224, 230, 0.5);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+    background: rgba(173, 224, 230, 0.8);
+}
+
+.contact-icon {
+    margin-right: 5px;
+}
+
+.education-section ul {
+    list-style: none;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.education-section ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.education-section ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: rgb(240, 240, 240);
+    font-size: 1.2em;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
     margin-top: auto;
 }
 
-.container {
-    /*background: linear-gradient(to bottom, #f5f5dc, #d2b48c);*/
-    background: linear-gradient(to bottom, rgb(42,  85,  109, 0.5), rgb(27, 39, 54, 0.5));
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    max-width: 800px;
-    width: 90%;
-    padding: 30px;
-    margin: 20px auto;
-    box-sizing: border-box;
-    text-align: center;
-}
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
 
-.contact-section {
-    background-color: rgba(173, 224, 230, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
+    .text-container h1 {
+        font-size: 2em;
+    }
 
-
-.text-container {
-    text-align: center; /* Center text and image */
-    margin: 20px auto; /* Center the container */
-    max-width: 800px; /* Adjust as needed */
-    width: 90%; /* Responsive width */
-    box-sizing: border-box;
-}
-
-.text-container h1 {
-    font-size: 2.2em; /* Adjust size as needed */
-    margin: 0;
-    color: white; /* Text color */
-}
-
-.text-container h2 {
-    font-size: 1.2em; /* Adjust size as needed */
-    margin-bottom: 10%;
-    color: white; /* Text color */
-    font-weight: normal;
-}
-
-@media (max-width: 600px) {
+    .text-container h2 {
+        font-size: 1.1em;
+    }
 
     .profile-img {
-        width: 100px; /* Adjust width for smaller screens */
-        height: 100px;
-        margin-top: 10px; /* Adjust spacing for smaller screens */
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
+@media (max-width: 480px) {
+    .text-container h1 {
+        font-size: 1.8em;
+    }
 
-.collapsible2 {
-  font-weight: bold;
-  background-color: rgba(173, 224, 230, 0.5); /* Make it transparent */
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;          /* Remove any default border */
-  text-align: left;
-  font-family: "Lato", sans-serif;
-  outline: none;
-  font-size: 0.9em;
-  margin-top: 10px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Push content to the edges */
-}
+    .text-container h2 {
+        font-size: 1em;
+    }
 
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
 
-.collapsible2::after { /* Create the "V" symbol */
-  content: "\2228";
-  font-size: 1.2em;
-  margin-left: 10px; /* Adjust spacing as needed */
-}
-
-
-.content {
-    padding: 0 18px;
-    overflow: hidden;
-    background-color: #963846;
-    margin-top: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: block;
-}
-
-p, ul {
-    margin: 15px 0;
-    line-height: 1.6;
-    color: white;
-    font-size: 1.0em;
-    font-weight: normal;
-    text-align: left;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-ul li {
-    padding-left: 20px;
-    text-indent: -20px;
-}
-
-ul li::before {
-    font-size: 1.2em;
-    content: "•";
-    color: rgb(240, 240, 240);
-    padding-right: 10px;
-}
-
-.whatsapp-link, .telegram-link {
-    display: inline-flex;  /* Changed to inline-flex for alignment */
-    align-items: center;   /* Vertically center icon and text */
-    margin-top: 20px;
-    text-align: center;
-    color: #25D366; /* WhatsApp green for the text */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-.whatsapp-icon {
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
-
-.image-text-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    margin: 20px auto; /* Center the container */
-    max-width: 1000px; /* Adjust as needed */
-    width: 90%; /* Responsive width */
-    box-sizing: border-box;
-}
-
-.profile-img {
-    width: 170px; /* Adjust width as needed */
-    height: 170px; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image covers the frame */
-    margin-top: 20px; /* Space between title and image */
-    object-position: center;
-}
-
-.image-container {
-    display: flex;
-    justify-content: flex-end; /* Aligns the image to the right */
-    padding: 10px; /* Add padding around the container */
-}
-
-
-.profile-description {
-    margin: 20px 0;
-}
-
-.whatsapp-link img, .telegram-link img {
-  width: 50px; /* Adjust the width as needed */
-  height: auto;  /* Maintain aspect ratio */
-  margin-right: 10px;
-}
-
-#schema-therapist-link:hover {
-  cursor: pointer;
-}
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 60px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    border-radius: 10px;
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.diploma-box {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgba(173, 224, 230, 0.5);
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-size: 1.2em;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.diploma-box:hover {
-    background-color: rgba(173, 224, 230, 0.8);
-}
-
-.element {
-    background: url('https://github.com/Golbstein/Golbstein.github.io/blob/main/assets/image.jpg?raw=true') no-repeat center bottom; /* Updated line */
-    background-size: 100% auto; /* Ensures full width while maintaining aspect ratio */
-    width: 100%;
-    min-height: 30vh; /* Adjust height as needed */
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-    .element {
-        background-size: contain; /* Ensures the whole image is always visible */
-        min-height: 40vh; /* Adjust for taller screens */
+    h3 {
+        font-size: 1.2em;
     }
 }
